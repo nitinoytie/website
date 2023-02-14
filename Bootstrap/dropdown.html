@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .drop{
+            position: relative;
+        }
+        .hide{
+            left: -10px;
+            position: relative;
+            display: none;
+            background-color: aqua;
+            padding: 10px 20px;
+        }
+        .right{
+            width: 60%;
+        }
+        .right nav{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .drop:hover .hide{
+            display: block;
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="out">
+            <div class="left">
+                <img width="100px"  src="" alt="">
+            </div>
+            <div class="right">
+                <nav>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <div class="drop">
+                        <li><a href="">Services</a></li>
+                        <ul class="hide">
+                            <li><a href="">Abc</a></li> 
+                            <li><a href="">lmn</a></li> 
+                            <li><a href="">xyz</a></li> 
+                            <li><a href="">opq</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Help</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
