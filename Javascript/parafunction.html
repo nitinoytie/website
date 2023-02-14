@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="abc.js"></script>
+</head>
+<body>
+    <input type="text" placeholder="Id..." id="id">
+    <input type="text" placeholder="Name" id="nm">
+    <input type="text" placeholder="Address" id="add">
+    <button onclick="fun()">Submit</button>
+    <div id="show"></div>
+    <script>
+      
+        function fun()
+        {
+            var id=document.getElementById("id").value;
+            var nm=document.getElementById("nm").value;
+            var add=document.getElementById("add").value;
+            Student(id,nm,add);
+        }
+    </script>
+</body>
+</html>

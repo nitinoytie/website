@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h2{
+        display: inline-block;
+        width: 110px;
+       }
+    </style>
+</head>
+<body>
+    <!-- onblur="fun()" -->
+    <input type="text" id="num">
+    <button onclick="fun()">Click</button>
+        <div id="show">
+            
+        </div>
+    <script>
+       function fun()
+       {
+         // var a=new Number(1);
+        var a=1;
+        var num=document.getElementById("num").value;
+        do{
+            var ab=document.createElement("h2");
+            ab.innerHTML+=num*a;
+            document.getElementById("show").appendChild(ab);
+            a++;
+        }
+        while(a<=10)
+       }
+    </script>
+</body>
+</html>

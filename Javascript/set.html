@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="show"></h1>
+    <script>
+        const num=new Set([1,2,3,4,5,6]);
+        num.add(10);
+        num.add(20);
+        // num.add("C")
+        var show="";
+        num.forEach(function(values)
+        {
+            show+=values+"<br>";
+        })
+        // for(var ab of num.values())
+        // {
+        //     show+=ab+"<br>";
+        // }
+
+        // for(var i=0;i<num.size;i++)
+        // {
+        //     document.write(num.values([i]))
+        // }
+
+
+        document.getElementById("show").innerHTML=show;
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=20;
+        var b=20;
+        document.write(a+b+"<br>") 
+        document.write(a-b+"<br>") 
+        document.write(a*b+"<br>") 
+        document.write(a/b+"<br>") 
+        document.write(a%b+"<br>") 
+        document.write((a++)+"<br>")//10
+        document.write((a--)+"<br>")//11
+        document.write(++a+"<br>")//11
+        document.write(--a+"<br>")//10
+
+        // console.log(a+b);
+document.write("<hr>")
+        document.write((a==b)+"<br>")//t
+        document.write((a<b)+"<br>")//f
+        document.write((a>b) +"<br>")//f
+        document.write((a<=b)+"<br>")//t
+        document.write((a>=b)+"<br>")//t
+        document.write((a!=b)+"<br>")//f
+        
+//        and                 or
+//   --------------       ------------
+//     1   1   1           1   1   1
+//     1   0   0           1   0   1
+//     0   1   0           0   1   1
+//     0   0   0           0   0   0
+document.write("<hr>")
+        // document.write(a<b && a==b);
+        // document.write(a<b || a==b);
+            document.write(!(a<=b));
+
+document.write("<hr>");
+
+        document.write(a+=50);//a=a+50 =70
+        document.write(a-=50);//a=a-50 =20
+        document.write(a*=2);//a=a-50 =40
+        document.write(a/=10);//a=a-50 =4
+document.write("<hr>")
+
+        document.write((a==b)?"abc":"xyz")
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        header li{
+            list-style-type: none;
+        }
+        .nav_right{
+            display: none;
+        }
+        button{
+            display: none;
+            background: transparent;
+        }
+        @media (max-width:800px) {
+            .navmed{
+                display: none;
+            }
+            .nav_right{
+                display: block;
+            }
+            button{
+                display: block;
+            }
+        }
+        @media (min-width:801px){
+            #newnav{
+                display: none;
+            }
+        }
+        .sec1{
+            height: 480px;
+            background-image: url('img/Shipping.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        #newnav{
+            display: none;
+        }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <header>
+        <div style="background-color: aquamarine;" class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <img width="200" class="p-3" src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+                </div>
+                <div class="col-7 mt-4">
+                    <div class="navmed">
+                        <nav class="d-flex justify-content-around">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Gallary</a></li>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-2 px-5 pt-3">
+                    <button id="btn">
+                        <i class="nav_right float-end bi bi-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div id="newnav">
+                <nav class="text-center">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallary</a></li>
+                </nav>
+            </div>
+        </div>
+        <script>
+            document.getElementById("btn").addEventListener("click",function(){
+                document.getElementById("newnav").style.display="block";
+            }) 
+        </script>
+    </header>
+    <section class="sec1">
+        <div>
+            <div class="w-100 mb-5 position-absolute bottom-0 d-flex justify-content-center animate__animated animate__bounceInUp">
+                <i class="bi text-white bi-chevron-double-down animate__animated animate__bounce animate__delay-2s animate__infinite	infinite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </i>
+                <script>
+                    document.documentElement.style.setProperty('--animate-duration', '2s');
+                </script>
+            </div>
+        </div>
+    </section>
+    <section style="height: 400px;" class="bg-black">
+
+    </section>
+</body>
+</html>

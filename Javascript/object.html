@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="show"></h2>
+    <script>
+        // var a=10;
+        // var b=new Number(20);
+
+        function abc()
+        {
+            // var dat=new Date("2002-10-23 18:20:10");
+            var dat=new Date();
+            // dat.setHours(18)
+            var h=dat.getHours();
+            if(h<12)
+            {
+                document.getElementById("show").innerHTML=dat+" AM Good Morning.";
+            }
+            else if(h>=12 && h<=17)
+            {
+                document.getElementById("show").innerHTML=dat+" PM Good Afternoon.";
+            }
+            else if(h>17 && h<24){
+                document.getElementById("show").innerHTML=dat+" PM Good Evening.";
+            }
+            
+            setTimeout(abc,1000)
+
+        }
+        abc();
+    </script>
+</body>
+</html>

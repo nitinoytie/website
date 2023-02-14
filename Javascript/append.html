@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #out{
+            width: 100%;
+            min-height: 600px;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #in{
+            width: 25%;
+            height: 500px;
+            background-color: blueviolet;
+            position: relative;
+        }
+        .ab{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 150px;
+            height: 300px;
+            background-color: burlywood;
+        }
+        .xy{
+            background-image: url("https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-position: center;
+            background-size: cover
+        }
+    </style>
+</head>
+<body>
+    <div id="out">
+        <div id="in" onmouseover="xyz()"></div>
+        <div id="in"></div>
+        <div onmouseover="abc()" id="in"></div>
+    </div>
+    
+    <script>
+        function abc()
+        {
+            var a=document.createElement("div");
+            var att=document.createAttribute("class");
+            att.value="ab";
+            a.setAttributeNode(att)
+            document.getElementById("in").append(a);
+        }
+        function xyz()
+        {
+            var cl=document.createAttribute("class");
+            cl.value="xy";
+            document.getElementById("in").setAttributeNode(cl);
+        }
+    </script>
+</body>
+</html>
