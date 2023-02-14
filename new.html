@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ab{
+            width: 2px;
+            height: 2px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+        button{
+            font-size: 28px;
+        }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+     <button>Show</button>
+    <div class="ab">
+
+    </div>
+   
+    <script>
+        
+        $(document).ready(function(){
+       $("button").click(function(){
+        $(".ab").animate({
+            // left:"100%"
+            zoom:"10000%",
+            left: "50%",
+            top:"50%"
+        },5000)
+       })
+        })
+    </script>
+</body>
+</html>

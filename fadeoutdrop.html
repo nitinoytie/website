@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+            font-size: 22px;
+            background-image: linear-gradient(45deg,rgb(242, 159, 159),rgb(137, 137, 232));
+        }
+        .out {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 30% 30% 30%;
+        gap: 20px;
+    }
+    .in{
+        background-color: rgb(220, 220, 220);
+        text-align: center;
+        border: 2px groove black;
+        cursor: pointer;
+    }
+    p{
+        display: none;
+    }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="out">
+        <div class="in">
+            <h3>I Am FadeIn Effect In JQuery</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perferendis eligendi eos excepturi, quibusdam totam debitis cum saepe, in cumque placeat? Eos in perspiciatis dolores eveniet ex cum voluptate vitae?</p>
+        </div>
+
+        <div class="in">
+            <h3>I Am FadeIn Effect In JQuery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perferendis eligendi eos excepturi, quibusdam totam debitis cum saepe, in cumque placeat? Eos in perspiciatis dolores eveniet ex cum voluptate vitae?</p>
+            
+        </div>
+        <div class="in">
+            <h3>I Am FadeIn Effect In JQuery</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et perferendis eligendi eos excepturi, quibusdam totam debitis cum saepe, in cumque placeat? Eos in perspiciatis dolores eveniet ex cum voluptate vitae?</p>
+            
+        </div>
+    </div>
+    <script>
+        $(".in,h3").hover(function(){
+            $(".in>p").after(function(){
+                $(this).fadeToggle();
+            })
+        })
+    </script>
+</body>
+</html>

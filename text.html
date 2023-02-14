@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Welcome</h1>
+<input class="uname" type="text">
+<select name="" id="list">
+    <option value="Mumbai">Mumbai</option>
+    <option value="Pune" selected>Pune</option>
+    <option value="Nashik">Nashik</option>
+    <option value="Satara">Satara</option>
+    <option value="Aurangabad">Aurangabad</option>
+</select>
+<button>Click</button>
+    <script>
+        // $("h1").hover(function(){
+        //     $("h1").text("ABCD")
+        // })
+        $(document).ready(function(){
+            $("h1").css({
+                "color":"red",
+                "background-color":"Yellow",
+                "text-align":"center",
+                "display":"inline"
+            }).before("<spam>*</spam>")
+            $("button").click(function(){
+                var ab=$(".uname").val();
+                var city=$("#list").val();
+                document.write(ab+" "+city)
+            })
+        })
+    </script>
+</body>
+</html>

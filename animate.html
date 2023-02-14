@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .box,.box1,.box2{
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            display: block;
+            box-shadow: 2px 2px 2px #6a6868;
+            border-radius: 12px;
+            background-color: rgb(137, 43, 226);
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>Click</button>
+    <div class="box">
+
+    </div>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+    
+    <script>
+       $(document).ready(function(){
+        $("button").click(function(){
+        if($(".box").width()<150){
+            $(".box").animate({
+                // opacity:.5, 
+                width:"150px",
+                height:"150px",
+                rotate:"180deg"
+            },500)
+        }
+        else{
+            $(".box").animate({
+                // opacity: 1,
+                width:"100px",
+                height:"100px",
+                rotate:"0deg"
+            },500)
+        }
+        $(".box").delay().fadeIn();
+        $(".box1").delay(1000).fadeIn();
+        $(".box2").delay(2000).fadeIn();
+        })
+       })
+    </script>
+</body>
+</html>
